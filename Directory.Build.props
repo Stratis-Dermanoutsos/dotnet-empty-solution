@@ -1,13 +1,21 @@
 <Project>
 
-    <PropertyGroup>
+  <PropertyGroup>
 
-        <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
-        <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
-        <TargetFramework>net10.0</TargetFramework>
-        <LangVersion>14</LangVersion>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <TargetFramework>net10.0</TargetFramework>
+    <LangVersion>14</LangVersion>
 
-    </PropertyGroup>
+  </PropertyGroup>
+
+  <!-- Apply only to projects that use 'Microsoft.NET.Sdk.Web' -->
+  <PropertyGroup Condition="'$(MSBuildSDKsPath)' != '' and '$(UsingMicrosoftNETSdkWeb)' == 'true'">
+
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <InvariantGlobalization>false</InvariantGlobalization>
+
+  </PropertyGroup>
 
 </Project>

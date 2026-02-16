@@ -1,12 +1,14 @@
 ﻿<Solution>
-  <Folder Name="/solution/">
+  <Folder Name="/Solution Items/">
     <File Path=".editorconfig" />
     <File Path="Directory.Build.props" />
     <File Path="Directory.Packages.props" />
   </Folder>
-  <Folder Name="/solution/git/">
+  <Folder Name="/Solution Items/git/">
     <File Path=".gitignore" />
     <File Path=".github/CODEOWNERS" />
     <File Path="README.md" />
   </Folder>
+  <Folder Name="/src/" />
+  <Folder Name="/test/" />
 </Solution>
